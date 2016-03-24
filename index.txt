@@ -2,7 +2,7 @@
 2str 2
 3str 3
 4str 5
-5str(d2)
+5str(d2) 6
 6str(d1)
     iss1 str1
     iss1 str2
