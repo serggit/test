@@ -4,3 +4,4 @@
 4str
 5str(d2)
 iss1 str1
+iss1 str2
