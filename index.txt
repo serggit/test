@@ -4,3 +4,6 @@
 4str
 5str(d2)
 6str(d1)
+    iss1 str1
+    iss1 str2
+    iss1 str 3 from d2
