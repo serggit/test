@@ -1,9 +1,9 @@
 1str 1
 2str 2
 3str 3
-4str 5
-5str(d2) 6
-6str(d1)
+4str 4
+5str(d2) 5
+6str(d1) 6
     iss1 str1
     iss1 str2
     iss1 str 3 from d2
