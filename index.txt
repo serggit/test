@@ -8,7 +8,7 @@
     iss1 str2
     iss1 str 3 from d2
 7str 7str d2
-8str
+8str 1
 9str
 10str
 11str
