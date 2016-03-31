@@ -1,4 +1,4 @@
-1str 1
+1str 1 !
     iss10-1-1
     iss10-2
     iss100
