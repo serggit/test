@@ -5,3 +5,4 @@
 1str 2
 1str 3
 1str 4
+some changes for IP-30
