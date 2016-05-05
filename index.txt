@@ -1,13 +1,1 @@
-1str 1 !!!
-    iss10-1-1
-    iss10-2
-    iss100
-1str 2
-1str 3
-1str 4
-some changes for IP-30
-some changes 2 for IP-30
-some changes for IP-31
-some changes 2 for IP-31
-master ch1
-master ch2
+1 master
