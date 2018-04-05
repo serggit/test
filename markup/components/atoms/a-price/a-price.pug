@@ -1,0 +1,6 @@
+mixin a-price(prefix, val)
+  .a-price(class!=attributes.class)
+    if prefix
+      span.a-price__prefix=prefix
+    span.a-price__val=val
+    span.a-price__currency &#8381;

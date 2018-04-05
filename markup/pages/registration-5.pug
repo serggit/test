@@ -1,0 +1,37 @@
+extends ../components/page/registration.pug
+
+include ../components/mixins/mixins.pug
+block registration
+  .o-slide
+    .m-progress
+      .m-progress__label Вопрос 5 из 6
+      .a-progress
+        .a-progress__fill(style="width:90%")
+
+    .o-slide__title Как часто вы занимаетесь спортом?
+
+    .m-form-group.m-form-group--hor
+      .m-form-item.m-form-group__item
+        .m-form-item__label Я занимаюсь спортом
+        .m-check-group
+          label.a-check.m-check-group__item
+            input(type="radio" name="sport" checked)
+            .a-check__radio
+            .a-check__text Не занимаюсь спортом
+          label.a-check.m-check-group__item
+            input(type="radio" name="sport")
+            .a-check__radio
+            .a-check__text От 1 до 3 раз в неделю
+          label.a-check.m-check-group__item
+            input(type="radio" name="sport")
+            .a-check__radio
+            .a-check__text От 3 до 5 раз в неделю
+          label.a-check.m-check-group__item
+            input(type="radio" name="sport")
+            .a-check__radio
+            .a-check__text Каждый день, иногда 2 тренировки в день.
+
+
+    .o-slide__body-button
+      a.a-btn.a-btn--glow.a-btn--lg(href="#") Далее
+        i.fas.fa-angle-right

@@ -1,0 +1,10 @@
+mixin a-person(url, title, text)
+  .a-person(class!=attributes.class)
+    if url
+      .a-person__img
+        img(src=url)
+    .a-person__wrap
+      if title
+        .a-person__title=title
+      if text
+        .a-person__text=text

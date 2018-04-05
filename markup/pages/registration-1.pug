@@ -1,0 +1,37 @@
+extends ../components/page/registration.pug
+
+include ../components/mixins/mixins.pug
+block registration
+  .o-slide
+    .m-progress
+      .m-progress__label Вопрос 1 из 6
+      .a-progress
+        .a-progress__fill(style="width:15%")
+
+    .o-slide__title Укажите ваш пол и дату рождения
+
+    .m-form-group.m-form-group--hor
+      .m-form-item.m-form-group__item
+        .m-form-item__label Дата рождения
+        .m-input-iconed
+          // TODO calenar
+          input.a-input.a-input--dark(type="text" value="22.05.1994" id="calendar")
+          label.m-input-iconed__label(for="calendar")
+            i.fal.fa-calendar-alt
+
+      .m-form-item.m-form-group__item
+        .m-form-item__label Пол
+        .m-check-group
+          label.a-check.m-check-group__item
+            input(type="radio" name="sex" checked)
+            .a-check__radio
+            .a-check__text Мужской
+          label.a-check.m-check-group__item
+            input(type="radio" name="sex")
+            .a-check__radio
+            .a-check__text Женский
+
+
+    .o-slide__body-button
+      a.a-btn.a-btn--glow.a-btn--lg(href="#") Далее
+        i.fas.fa-angle-right

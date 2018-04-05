@@ -1,0 +1,31 @@
+include ../../atoms/a-rating/a-rating.pug
+include ../../atoms/a-price/a-price.pug
+
+mixin o-card
+  .o-card
+    .o-card__img
+      .o-card__img-fon(style="background-image: url('http://placehold.it/250x250')")
+    .o-card__content
+      .o-card__title Диетическая программа питания Диетто
+      p Учитываются ваши любимые и нелюбимые продукты Учтено процентное целевое соотношение БЖУ Более 115 рецептов диетических блюд Программа автоматически адаптируется под вашу суточную норму ккал
+      .m-tags
+        .a-tag #Очистить организм
+        .a-tag #Вегетерианское питание
+        .a-tag #Очистить организм
+      .o-card__bottom
+        .o-card__bottom-item
+          .m-rating
+            .m-rating__title УРОВЕНЬ СЛОЖНОСТИ
+            +a-rating()
+
+        .o-card__bottom-item
+          .m-rating
+            .m-rating__title ЭФФЕКТИВНОСТЬ
+            +a-rating()
+
+        .o-card__bottom-item.o-card__bottom-item--price
+          +a-price("От", "699")
+
+        .o-card__bottom-item.o-card__bottom-item--button
+          a.a-btn.a-btn--primary(href="#") Подробнее
+            i.fas.fa-angle-right

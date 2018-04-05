@@ -1,0 +1,44 @@
+.a-rating {
+    cursor: default;
+    font-size: 0;
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 2px;
+
+
+        .fa-star {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            &:first-child {
+                color: #a2d048;
+                display: none;
+            }
+            &:last-child {
+                color: #cecece;
+            }
+        }
+    }
+    &__item--filled {
+        .fa-star {
+            &:first-child {
+                display: block;
+            }
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+    &--disabled {
+        cursor: default;
+    }
+    &--disabled &__item {
+        cursor: default;
+    }
+}

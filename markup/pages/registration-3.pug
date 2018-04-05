@@ -1,0 +1,30 @@
+extends ../components/page/registration.pug
+
+include ../components/mixins/mixins.pug
+block registration
+  .o-slide
+    .m-progress
+      .m-progress__label Вопрос 3 из 6
+      .a-progress
+        .a-progress__fill(style="width:35%")
+
+    .o-slide__title Укажите ваш текущий рос и вес
+
+
+    .m-form-group.m-form-group--hor
+      .m-form-item.m-form-group__item
+        .m-form-item__label Ваш вес
+        .m-input-addon.m-input-addon--w-100
+          .m-input-addon__input
+            input.a-input.a-input--dark(type="text" value="56")
+          .m-input-addon__label Кг
+      .m-form-item.m-form-group__item
+        .m-form-item__label Ваш рост
+        .m-input-addon.m-input-addon--w-100
+          .m-input-addon__input
+            input.a-input.a-input--dark(type="text" value="176")
+          .m-input-addon__label См
+
+    .o-slide__body-button
+      a.a-btn.a-btn--glow.a-btn--lg(href="#") Далее
+        i.fas.fa-angle-right

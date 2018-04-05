@@ -1,2 +1,40 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+
+$decor: 'Montserrat', sans-serif;
+.decor {
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1d1d1d;
+}
+a {
+    text-decoration: none;
+    color: #a2d048;
+}
+.a-h1 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: $decor;
+    line-height: 1.2;
+    margin: 0 0 24px;
+    display: flex;
+    align-items: center;
+    &__back {
+        margin-right: 10px;
+        position: relative;
+        top: 2px;
+    }
+}
+.a-h2 {
+    padding: 0;
+    font-family: $decor;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 18px;
+}
+.rub {
+    font-family: 'Roboto', sans-serif;
+}

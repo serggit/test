@@ -1,0 +1,41 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../head/head.pug
+
+  block head
+    head
+      +head(head.defaults)
+
+  block body
+    body.l-slide
+      | %=symbols=%
+
+      .l-slide__left
+        block l-slide__left
+          // TODO IMG
+          .a-stretch-fon(style="background: #060c23;")
+          .o-steps
+            .o-steps__head
+              img.o-steps__head-logo(src="http://placehold.it/62x47")
+              .o-steps__head-slogan Уникальные программы питания и тренировок
+
+            .o-steps__body
+              block registration
+
+
+            .o-steps__foot
+              img.o-steps__foot-logo(src="http://placehold.it/62x47")
+              .o-steps__foot-text ООО «Диетто», 115682, г. Москва, ул. Шипиловская, д.64, корп.1,<br/> пом. 147, комн. 1А
+                .a-brands
+                  a.a-brands__item.a-brands__item--dark(href="#"): i.fab.fa-vk
+                  a.a-brands__item.a-brands__item--dark(href="#"): i.fab.fa-facebook
+                  a.a-brands__item.a-brands__item--dark(href="#"): i.fab.fa-instagram
+
+
+
+      .l-slide__right
+        block l-slide__right
+          .a-stretch-fon(style="background-image: url('%=static=%img/content/slide-right-1.png')")
+
+      script(src='%=static=%js/main%=hash=%%=min=%.js')
+      script(src='%=static=%js/separate-js/scripts.js')

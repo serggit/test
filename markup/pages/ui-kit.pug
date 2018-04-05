@@ -1,0 +1,61 @@
+extends ../components/page/default.pug
+include ../components/atoms/a-rating/a-rating.pug
+include ../components/atoms/a-price/a-price.pug
+
+block in
+  a.a-btn.a-btn--primary(href="#") some text here
+    i.fas.fa-angle-right
+
+  a.a-btn.a-btn--gold(href="#") some text here
+    i.fas.fa-angle-right
+
+  a.a-btn.a-btn--gold(href="#") some text here
+    i.fas.fa-angle-right
+
+  .a-tag #Очистить огранизм
+
+  div.rub &#8381;
+
+  +a-rating()(class="a-rating--disabled")
+  +a-rating()
+
+  .m-rating
+    .m-rating__title Some title
+    +a-rating()
+
+  +a-price("От", "699")
+
+  i.far.fa-comment-alt-lines
+  i.fal.fa-comment-alt-lines
+  i.fas.fa-comment-alt-lines
+  i.fal.fa-comment-lines
+  i.far.fa-comment-lines
+  i.fas.fa-comment-lines
+
+  .a-brands
+    a.a-brands__item.a-brands__item--vk(href="#"): i.fab.fa-vk
+    a.a-brands__item.a-brands__item--facebook(href="#"): i.fab.fa-facebook-f
+    a.a-brands__item.a-brands__item--twitter(href="#"): i.fab.fa-twitter
+    a.a-brands__item.a-brands__item--ok(href="#"): i.fab.fa-odnoklassniki
+    a.a-brands__item.a-brands__item--google-plus(href="#"): i.fab.fa-google-plus-g
+
+  input.a-input(placeholder="Введите промокод")
+
+  label.a-check
+    input(type="radio" name="sex")
+    .a-check__radio
+    .a-check__text Мужской
+
+  label.a-check
+    input(type="checkbox")
+    .a-check__checkbox
+      i.fas.fa-check
+    .a-check__text Мужской
+
+
+
+
+
+
+
+

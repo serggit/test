@@ -1,0 +1,18 @@
+mixin o-footer
+  .o-footer
+    .container
+      .o-footer__in
+        // TODO IMG
+        img.o-footer__logo(src="http://placehold.it/62x47")
+
+        .o-footer__info
+          -var menuSub = ["Блог проекта", "Как пользоваться сервисом", "Контакты и оплата"]
+          ul.m-menu.m-menu--sub
+            each val in menuSub
+              li.m-menu__item
+                a.a-menu-item.a-menu-item--sub(href="#")=val
+
+          .a-brands
+            a.a-brands__item.a-brands__item--dark(href="#"): i.fab.fa-vk
+            a.a-brands__item.a-brands__item--dark(href="#"): i.fab.fa-facebook
+            a.a-brands__item.a-brands__item--dark(href="#"): i.fab.fa-instagram

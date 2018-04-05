@@ -1,0 +1,127 @@
+.o-header {
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+    margin: 0 0 22px;
+    &__top {
+        height: 62px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 20;
+    }
+    &__logo {
+        position: absolute;
+        left: 0;
+        top: 7px;
+    }
+    &__personal {
+        flex: 0 0 auto;
+        margin-left: 15px;
+    }
+    &__menu {
+        display: none;
+    }
+    &__menu-main {
+        font-family: $decor;
+        border-top: #f1f1f1 solid 1px;
+    }
+
+    &__button {
+        border-radius: 3px;
+        font-size: 10px;
+        font-weight: bold;
+        font-family: $decor;
+        padding: 0 15px 0 15px;
+        line-height: 36px;
+    }
+
+    // dropdown here
+    &__menu-main .m-menu--main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__menu-main .m-menu__item:not(:first-child) {
+        margin-left: 0;
+    }
+    &__menu-sub {
+        background: #f7f7f7;
+        border: #f1f1f1 solid;
+        border-width: 1px 0;
+        font-family: $decor;
+        ul {
+            @include nl;
+            display: flex;
+            align-items: center;
+            li {
+                font-family: Montserrat;
+                font-size: 10px;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-left: 23px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        display: inline-block;
+                        margin: 0 10px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    &__menu-trigger {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        cursor: pointer;
+        z-index: 10;
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 6px;
+            width: 12px;
+            height: 2px;
+            background: #253238;
+            transition: 0.3s;
+        }
+        &:before {
+            top: 8px;
+        }
+        &:after {
+            top: 14px;
+        }
+    }
+    &__menu-trigger--opened {
+        &:before {
+            left: 6px;
+            top: 11px;
+            transform: rotate(45deg);
+        }
+        &:after {
+            left: 6px;
+            top: 11px;
+            transform: rotate(-45deg);
+        }
+    }
+    &__menu-wrap {
+        width: 24px;
+        height: 24px;
+        right: 30px;
+        top: 43px;
+        position: absolute;
+    }
+    &__menu-detail {
+        position: fixed;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        background: #fcc;
+        z-index: 11;
+    }
+}

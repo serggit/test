@@ -1,0 +1,254 @@
+extends ../components/page/default.pug
+
+include ../components/mixins/mixins.pug
+
+block in
+  .container
+    .row
+      .col-lg-9
+        .a-h1
+          a.a-h1__back(href="#"): i.fal.fa-long-arrow-left
+          .
+            Диетическая программа питания Диетто
+        // .o-promo
+        .o-promo
+          a.m-promo(href="#" style="background-image: url('%=static=%img/content/1.jpg')")
+            .row
+              .col-md-8.m-promo__text
+                .m-promo__head Диетическая программа питания Диетто
+                p Учитываются ваши любимые и нелюбимые продукты Учтено процентное целевое соотношение БЖУ Более 115 рецептов диетических блюд Программа автоматически адаптируется под вашу суточную норму ккал
+              .col-md-3.offset-md-1.m-promo__person
+                +a-person("%=static=%img/content/16.jpg", "Ананьев Матвей", "Профессиональный диетолог")(class="a-person--white")
+
+          .o-promo__info
+            .o-promo__info-item
+              .m-rating
+                .m-rating__title УРОВЕНЬ СЛОЖНОСТИ
+                +a-rating()
+            .o-promo__info-item
+              .m-rating
+                .m-rating__title ЭФФЕКТИВНОСТЬ
+                +a-rating()
+            .o-promo__info-item
+              .m-tags
+                .a-tag.a-tag--green #Очистить организм
+                .a-tag.a-tag--green #Вегетерианское питание
+                .a-tag.a-tag--green #Очистить организм
+
+          .o-promo__character
+            .row.align-items-stretch
+              .col-md-4.o-promo__character-item
+                .a-char
+                  .a-char__fon 114
+                  .a-char__title <b>114+</b> блюд
+                  .a-char__description От 114 вкусных блюд в меню
+              .col-md-4.o-promo__character-item
+                .a-char
+                  .a-char__fon 90
+                  .a-char__title <b>90</b> дней
+                  .a-char__description Результат на 90 дней
+              .col-md-4.o-promo__character-item
+                .a-char
+                  .a-char__fon -3
+                  .a-char__title <b>-3</b> блюд
+                  .a-char__description Минус 3 килограма неделю
+
+
+
+          .o-promo__info-blocks
+            .row
+              .col-md-6.d-flex.align-items-stretch
+                .a-info-block
+                  .a-info-block__icon
+                    img(src="%=static=%img/content/info-b-1.png")
+                  .a-info-block__title Пятиразовое меню
+                  .a-info-block__text Три полноценных приема пищи и 2 перекуса
+              .col-md-6.d-flex.align-items-stretch
+                .a-info-block
+                  .a-info-block__icon
+                    img(src="%=static=%img/content/info-b-2.png")
+                  .a-info-block__title Замена блюд
+                  .a-info-block__text Вы можете заменить блюдо на аналогичное
+              .w-100
+              .col-md-6.d-flex.align-items-stretch
+                .a-info-block
+                  .a-info-block__icon
+                    img(src="%=static=%img/content/info-b-3.png")
+                  .a-info-block__title Выбор
+                  .a-info-block__text Вы можете выбрать любимые и нелюбимые продукты
+              .col-md-6.d-flex.align-items-stretch
+                .a-info-block
+                  .a-info-block__icon
+                    img(src="%=static=%img/content/info-b-4.png")
+                  .a-info-block__title Порции
+                  .a-info-block__text Автоматически расчитаем вам размер порций
+        // //.o-promo
+
+        .a-h2 Выберите план
+
+        .row
+          .col-md-4.d-flex.align-items-stretch
+            // .m-buy-block
+            .m-buy-block
+              .m-buy-block__top
+                .m-buy-block__title 1 месяц за 2069 <span class="rub">&#8381;</span>
+                .m-buy-block__description Для тех кто настроен серьезно!
+              .m-buy-block__val <b>20 <span class="rub">&#8381;</span></b> в день
+              .m-buy-block__button
+                a.a-btn.a-btn--primary(href="#") Купить за 2069 <span class="rub">&#8381;</span>
+                  i.fas.fa-angle-right
+
+            // //.m-buy-block
+          .col-md-4.d-flex.align-items-stretch
+            // .m-buy-block
+            .m-buy-block
+              .m-buy-block__top
+                .m-buy-block__title 3 месяца за 3999 <span class="rub">&#8381;</span>
+                .m-buy-block__description Для тех, кому важен результат!
+              .m-buy-block__label Дарим вам скидку <span>–25%</span>
+              .m-buy-block__val <b>18 <span class="rub">&#8381;</span></b> в день
+              .m-buy-block__button
+                a.a-btn.a-btn--primary(href="#") Купить за 3199 <span class="rub">&#8381;</span>
+                  i.fas.fa-angle-right
+
+            // //.m-buy-block
+          .col-md-4.d-flex.align-items-stretch
+            // .m-buy-block
+            .m-buy-block
+              .m-buy-block__top
+                .m-buy-block__title 3 месяца за 3999 <span class="rub">&#8381;</span>
+                .m-buy-block__description Для тех, кому важен результат!
+              .m-buy-block__label Дарим вам скидку <span>–55%</span>
+              .m-buy-block__val <b>13 <span class="rub">&#8381;</span></b> в день
+              .m-buy-block__button
+                a.a-btn.a-btn--primary(href="#") Купить за 4599 <span class="rub">&#8381;</span>
+                  i.fas.fa-angle-right
+            // // .m-buy-block
+
+
+        .m-invite-big
+          .m-invite-big__icon
+            i.fal.fa-user
+            i.fal.fa-plus
+          .m-invite-big__text Попробуйте программу <span>в течение 1 недели, пригласив всего 5 друзей</span>
+          a.a-btn.a-btn--lg.a-btn--contour-white(href="#") Пригласить друзей
+          .m-invite-big__brands
+            +a-brands()
+
+        .a-h2 Вас также может заинтересовать:
+        //.o-cards-group
+        .o-cards-group
+          +o-card()
+          +o-card()
+          +o-card()
+        // //.o-cards-group
+
+      .col-lg-3
+
+        // .m-side-block
+        .m-side-block
+          .m-side-block__head Корзина
+            .a-bage 3000 <span class="rub">&#8381;</span>
+          .m-side-block__items
+            .m-side-block__item
+              .m-side-block__item-img
+                img(src="http://placehold.it/40x40")
+              .m-side-block__item-text Диетическая программа питания Диетто Олд Скул
+                +a-price("", "699")(class="a-price--small")
+            .m-side-block__item
+              .m-side-block__item-img
+                img(src="http://placehold.it/40x40")
+              .m-side-block__item-text Диетическая программа питания Диетто Олд Скул
+                +a-price("", "699")(class="a-price--small")
+          .m-checkout
+            .m-checkout__input-label Промо-код:
+            .m-checkout__form
+              .m-checkout__form-input
+                input.a-input(placeholder="Введите промокод")
+              .m-checkout__form-btn
+                a.a-btn.a-btn--primary.a-btn--round(href="#")
+                  i.far.fa-check
+
+
+            .m-checkout__head Итого к оплате:
+              +a-price("", "3 000")(class="a-price--small")
+            a.a-btn.a-btn--primary.a-btn--block(href="#") Оформить заказ
+        // //.m-side-block
+
+        .m-invite
+          .m-invite__icon
+            i.fal.fa-user
+            i.fal.fa-plus
+          .m-invite__wrap
+            .m-invite__title Приглашай друзей
+            .m-invite__text и развивайся бесплатно!
+            +a-brands()
+
+
+
+
+        .m-banner.m-banner--blue(style="background: #307a98")
+          .m-banner__head Dietto the game
+          .m-banner__text Старт сезона через:
+          .a-countdown.js-countdown(data-countdown="2018/04/30 23:00:00")
+            .a-countdown__item.a-countdown__item--d
+              .a-countdown__val
+                span
+                span
+              .a-countdown__label
+            .a-countdown__item.a-countdown__item--h
+              .a-countdown__val
+                span
+                span
+              .a-countdown__label часа
+            .a-countdown__item.a-countdown__item--min
+              .a-countdown__val
+                span
+                span
+              .a-countdown__label минут
+
+          a.a-btn.a-btn--primary(href="#") ПРИНЯТЬ УЧАСТИЕ
+            i.fas.fa-angle-right
+
+        .m-banner.m-banner--gold
+          +a-person("http://placehold.it/70x70", "Конференция о сжигании лишних колорий!", "22.12.2018")(class="a-person--gold a-person--banner")
+          a.a-btn.a-btn--gold(href="#") ЗАПИСАТЬСЯ
+            i.fas.fa-angle-right
+
+        .m-banner.m-banner--aqua
+          +a-person("http://placehold.it/70x70", "Конференция о сжигании лишних колорий!", "22.12.2018")(class="a-person--gold a-person--banner")
+          a.a-btn.a-btn--aqua(href="#") ЗАПИСАТЬСЯ
+            i.fas.fa-angle-right
+
+
+
+        // .m-side-block
+        .m-side-block
+          .m-side-block__head Отзывы участников:
+            .a-bage 46
+          .m-side-block__items
+
+            .m-side-block__item
+              .m-side-block__item-text.m-side-block__item-text--light
+                +a-person("http://placehold.it/49x49", "Ананьев Матвей", "27 лет, Владивосток")(class="a-person--hor a-person--small")
+                p Я безмерно рада что выбрала другой путь и слово "лень" для меня теперь враг #1, которого я к себе больше никогда не подпущу
+                a(href="#") Смотреть результат
+
+            .m-side-block__item
+              .m-side-block__item-text.m-side-block__item-text--light
+                +a-person("http://placehold.it/49x49", "Ананьев Матвей", "27 лет, Владивосток")(class="a-person--hor a-person--small")
+                p Я безмерно рада что выбрала другой путь и слово "лень" для меня теперь враг #1, которого я к себе больше никогда не подпущу
+                .m-img-list
+                  .a-img.m-img-list__item
+                    img(src="http://placehold.it/30x30")
+                  .a-img.m-img-list__item
+                    img(src="http://placehold.it/30x30")
+
+                a(href="#") Смотреть результат
+
+          .m-side-block__bottom
+            a.a-btn.a-btn--primary.a-btn--block(href="#")
+              i.fas.fa-plus
+              .
+                Добавить отзыв
+        // //.m-side-block

@@ -1,0 +1,12 @@
+.o-footer {
+    background: #fff;
+    border-top: #f1f1f1 solid 1px;
+    &__in {
+        display: flex;
+        align-items: center;
+        height: 99px;
+    }
+    &__logo {
+        margin-right: 33px;
+    }
+}

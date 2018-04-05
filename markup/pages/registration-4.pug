@@ -1,0 +1,25 @@
+extends ../components/page/registration.pug
+
+include ../components/mixins/mixins.pug
+block registration
+  .o-slide
+    .m-progress
+      .m-progress__label Вопрос 4 из 6
+      .a-progress
+        .a-progress__fill(style="width:75%")
+
+    .o-slide__title Сколько бы вы хотели весить?
+
+    .m-form-group.m-form-group--hor
+      .m-form-item.m-form-group__item
+        .m-form-item__label Я хотел бы весить
+        .m-input-addon.m-input-addon--w-100
+          .m-input-addon__input
+            input.a-input.a-input--dark(type="text" value="56")
+          .m-input-addon__label Кг
+
+
+
+    .o-slide__body-button
+      a.a-btn.a-btn--glow.a-btn--lg(href="#") Далее
+        i.fas.fa-angle-right

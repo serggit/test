@@ -1,0 +1,100 @@
+.a-person {
+    color: #1d1d1d;
+    &__img {
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto 12px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $decor;
+        text-align: center;
+        margin: 0 0 3px;
+    }
+    &__text {
+        font-size: 11px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &--white {
+        color: #fff;
+    }
+    &--hor {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    &--hor &__img {
+        flex: 0 0 auto;
+        margin: 0 10px 0 0;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &--hor &__wrap {
+        flex: 1 1 auto
+    }
+    &--hor &__text {
+        margin: 0;
+        text-align: left;
+    }
+    &--hor &__title {
+        margin: 0;
+        text-align: left;
+    }
+
+    &--small &__title {
+        line-height: 1.38;
+        font-size: 13px;
+        font-weight: normal;
+    }
+    &--small &__text{
+        font-size: 11px;
+        line-height: 1.64;
+        color: #9f9f9f;
+        font-weight: normal;
+
+    }
+
+
+    &--banner {
+        margin-bottom: 12px;
+    }
+    &--banner &__title {
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        color: #fff;
+        margin: 0 0 2px;
+    }
+    &--banner &__text {
+        font-size: 13px;
+        line-height: 1.69;
+        font-weight: bold;
+    }
+
+    &--gold &__title {
+        color: #fff;
+    }
+    &--gold &__text {
+        color: #f8e71c;
+    }
+
+    &--aqua &__text {
+        color: #50e3c2;
+    }
+    &aqua &__title {
+        color: #fff;
+    }
+}

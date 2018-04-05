@@ -1,0 +1,26 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../head/head.pug
+  include ../organisms/o-header/o-header.pug
+  include ../organisms/o-footer/o-footer.pug
+
+  block head
+    head
+      +head(head.defaults)
+
+  block body
+    body.l-page
+      | %=symbols=%
+
+      section.l-page__wrapper
+        +o-header()
+        block in
+
+        .l-page__buffer
+
+      block footer
+        .l-page__footer
+          +o-footer()
+
+      script(src='%=static=%js/main%=hash=%%=min=%.js')
+      script(src='%=static=%js/separate-js/scripts.js')

@@ -1,0 +1,31 @@
+extends ../components/page/registration.pug
+
+include ../components/mixins/mixins.pug
+block registration
+  .o-slide
+    .m-progress
+      .m-progress__label Вопрос 2 из 6
+      .a-progress
+        .a-progress__fill(style="width:50%")
+
+    .o-slide__title Выберите ваш тип телосложения
+    // TODO popover
+    .m-check-body
+      label.m-check-body__item
+        input(type="radio" name="body")
+        .m-check-body__element
+          img(src="%=static=%img/content/body-1.png")
+          .m-check-body__label Эктоморф
+      label.m-check-body__item
+        input(type="radio" name="body")
+        .m-check-body__element
+          img(src="%=static=%img/content/body-1.png")
+          .m-check-body__label Мезоморф
+      label.m-check-body__item
+        input(type="radio" name="body")
+        .m-check-body__element
+          img(src="%=static=%img/content/body-1.png")
+          .m-check-body__label Эндоморф
+    .o-slide__body-button
+      a.a-btn.a-btn--glow.a-btn--lg(href="#") Далее
+        i.fas.fa-angle-right

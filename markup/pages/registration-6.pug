@@ -1,0 +1,38 @@
+extends ../components/page/registration.pug
+
+include ../components/mixins/mixins.pug
+block registration
+  .o-slide
+    .m-progress
+      .m-progress__label Вопрос 6 из 6
+      .a-progress
+        .a-progress__fill(style="width:100%")
+
+    .o-slide__title Укажите ваш email
+    .o-slide__title.o-slide__title--small для того чтобы получить подарок или войдите<br/>с помощью соц. сети.
+    .m-form-group.m-form-group--hor
+      .m-form-item.m-form-group__item
+        .m-form-item__label Ваш email:
+        .m-input-iconed.m-input-iconed--left
+          input.a-input.a-input--dark(type="text" value="22.05.1994" id="e-mail")
+          label.m-input-iconed__label(for="e-mail")
+            i.far.fa-envelope
+      .m-form-item.m-form-group__item
+        .m-form-item__label &nbsp;
+        +a-brands-rounded()
+
+
+    .m-form-item
+      .m-check-group
+        label.a-check.m-check-group__item
+          input(type="checkbox" name="sex")
+          .a-check__checkbox
+            i.fas.fa-check
+          .a-check__text Я принимаю <a href="#">условия</a> пользовательского соглашения
+
+
+
+
+      .m-form-item__note Используя сервис, Вы соглашаетесь с <a href="#">условиями обработки персональных данных</a>
+    .o-slide__body-button
+      a.a-btn.a-btn--glow.a-btn--lg(href="#") Получить результаты теста, подарок и начать пользоваться Dietto
