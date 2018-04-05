@@ -1,3 +1,9 @@
+## Naming html:
+<ul>
+ <li><a href="https://www.lullabot.com/articles/bem-atomic-design-a-css-architecture-worth-loving">BEM & ATOMIC DESIGN</a></li>
+</ul>
+
+
 <p align="right">
 English description | <a href="README_RU.md">Описание на русском</a>
 </p>
